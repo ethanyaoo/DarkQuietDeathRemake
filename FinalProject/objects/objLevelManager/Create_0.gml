@@ -56,6 +56,95 @@ playerSpawn = false;
 
 for (var _y = 1; _y < _height - 1; _y++)
 {
+	for (_x = 1; _x < _width - 1; _x++)
+	{
+		if (_grid[# _x, _y] != FLOOR)
+		{
+			var _wallTop = _grid[# _x, _y - 1] == VOID;
+			var _wallLeft = _grid[# _x - 1, _y] == VOID;
+			var _wallRight = _grid[# _x + 1, _y] == VOID;
+			var _wallBot = _grid[# _x, _y + 1] == VOID;
+			
+			var tileIndex = NORTH * _wallTop + WEST * _wallLeft + EAST * _wallRight + SOUTH * _wallBot + 1;
+			
+			if (tileIndex == 1)
+			{
+				_grid[# _x, _y] = FLOOR;
+			}
+		}
+	}
+}
+
+for (var _y = 1; _y < _height - 1; _y++)
+{
+	for (var _x = 1; _x < _width - 1; _x++)
+	{
+		if (_grid[# _x, _y] == FLOOR)
+		{
+			var _wallTop = _grid[# _x, _y - 1] == VOID;
+			var _wallLeft = _grid[# _x - 1, _y] == VOID;
+			var _wallRight = _grid[# _x + 1, _y] == VOID;
+			var _wallBot = _grid[# _x, _y + 1] == VOID;
+			
+			if (_wallTop)
+			{
+				instance_create_layer(_x * 16, (_y - 1) * 16, "Level", objWallTop);
+			}
+			
+			if (_wallLeft)
+			{
+				instance_create_layer((_x - 1) * 16, _y * 16, "Level", objWall);
+			}
+			
+			if (_wallRight)
+			{
+				instance_create_layer((_x + 1) * 16, _y * 16, "Level", objWall);
+			}
+			
+			if (_wallBot)
+			{
+				instance_create_layer(_x * 16, (_y + 1) * 16, "Level", objWall);
+			}
+		}
+	}
+}
+
+for (var _y = 1; _y < _height - 1; _y++)
+{
+	for (var _x = 1; _x < _width - 1; _x++)
+	{
+		if (_grid[# _x, _y] == FLOOR)
+		{
+			var _wallTopLeft = _grid[# _x - 1, _y - 1] == VOID;
+			var _wallTopRight = _grid[# _x + 1, _y - 1] == VOID;
+			var _wallBotLeft = _grid[# _x - 1, _y + 1] == VOID;
+			var _wallBotRight = _grid[# _x + 1, _y + 1] == VOID;
+			
+			if (_wallTopLeft)
+			{
+				instance_create_layer((_x - 1) * 16, (_y - 1) * 16, "Level", objWall);
+			}
+			
+			if (_wallTopRight)
+			{
+				instance_create_layer((_x + 1) * 16, (_y - 1) * 16, "Level", objWall);
+			}
+			
+			if (_wallBotLeft)
+			{
+				instance_create_layer((_x - 1) * 16, (_y + 1) * 16, "Level", objWall);
+			}
+			
+			if (_wallBotRight)
+			{
+				instance_create_layer((_x + 1) * 16, (_y + 1) * 16, "Level", objWall);
+			}
+		}
+	}
+}
+
+for (var _y = 1; _y < _height - 1; _y++)
+{
 	for (var _x = 1; _x < _width - 1; _x++)
 	{
 		if (_grid[# _x, _y] == FLOOR)
@@ -66,7 +155,6 @@ for (var _y = 1; _y < _height - 1; _y++)
 				playerSpawn = true;
 			}
 			
-			//show_debug_message("hello");
 			tilemap_set(wallMapID, 129, _x, _y);
 			//instance_create_layer(_x * 16, _y * 16, "Level", objFloor);
 		}

@@ -7,4 +7,4 @@ draw_set_valign(fa_center);
 
 draw_set_font(fntGame);
 
-draw_text(room_width/2, room_height/2, "Narrative Game. Press Space to Start");
+draw_text(room_width/2, room_height/2, "Final Project Game. Press Space to Start");

@@ -9,7 +9,7 @@ function StealItem()
 		holdKey = true;
 		
 		NewTextbox("You have successfully stolen the key", ["0:(Leave)"]);
-		audio_play_sound(sndCollectKey, 10, false);
+		//audio_play_sound(sndCollectKey, 10, false);
 	}
 	else if (stealChance <= 75)
 	{

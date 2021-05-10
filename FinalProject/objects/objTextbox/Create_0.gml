@@ -17,5 +17,5 @@ cooldown = text_speed;
 
 responseSelected = 0;
 
-audio_play_sound(sndTalk, 10, false);
+//audio_play_sound(sndTalk, 10, false);
 

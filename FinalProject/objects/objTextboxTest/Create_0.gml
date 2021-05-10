@@ -37,7 +37,7 @@ ds_map_add(textMap, "NPC_01101", "No");
 ds_map_add(textMap, "NPC_01110", "South");
 ds_map_add(textMap, "NPC_01111", "wait");
 
-audio_play_sound(sndTalk, 10, false);
+//audio_play_sound(sndTalk, 10, false);
 
 xPos = window_get_width() / 2;
 yPos = (window_get_height() / 2) + 200;

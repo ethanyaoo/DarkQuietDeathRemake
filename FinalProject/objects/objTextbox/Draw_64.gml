@@ -25,7 +25,7 @@ if (index < text_length)
 		index++;
 		text_displayed = string_copy(_text, 1, index);
 		cooldown = text_speed;
-		audio_play_sound(sndTyping, 10, false);
+		//audio_play_sound(sndTyping, 10, false);
 	}
 }
 else if ((responses[0] != -1) && (index >= text_length))

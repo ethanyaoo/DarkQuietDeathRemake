@@ -1,9 +1,5 @@
 {
-  "name": "tsReplace",
-  "spriteId": {
-    "name": "sprTileset",
-    "path": "sprites/sprTileset/sprTileset.yy",
-  },
+  "spriteId": null,
   "tileWidth": 16,
   "tileHeight": 16,
   "tilexoff": 0,
@@ -1061,6 +1057,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tsReplace",
   "tags": [],
   "resourceType": "GMTileSet",
 }

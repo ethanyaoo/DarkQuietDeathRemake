@@ -2,27 +2,55 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function CollisionScript()
 {
-	if (place_meeting(x, y, objKey))
+	var _collision = false;
+	
+	if (place_meeting(x, y, objExit))
 	{
-		holdKey = true;
-		instance_destroy(objKey);
-		
-		audio_play_sound(sndCollectKey, 10, false);
+		room_restart();
 	}
-	else if (place_meeting(x, y, objDoor) && holdKey)
+	else if (place_meeting(x, y, objBattery))
 	{
-		instance_destroy(objDoor);
+		flashlightBattery += 2;
 		
-		audio_play_sound(sndOpenDoor, 10, false);
-	}
-	else if (place_meeting(x, y, objExit))
-	{
-		room_goto(0);
+		if (flashlightBattery > 10) flashlightBattery = 10;
 		
-		audio_play_sound(sndGameEnd, 10, false);
+		var batteryInst = instance_place(x, y, objBattery);
+		
+		with (batteryInst)
+		{
+			instance_destroy();
+		}
 	}
 	else
 	{
+		if (place_meeting(x + hSpeed, y, objSolid))
+		{
+			//x -= hSpeed;
+			//x -= hSpeed;
+			//if (sign(hSpeed) == 1) x += hSpeed;
+			hSpeed = 0;
+			_collision = true;
+		}
+		
+		if (x + hSpeed > 0 && x + hSpeed < room_height) 
+		{
+			x += hSpeed;
+		}
+		
+		if (place_meeting(x, y + vSpeed, objSolid)) 
+		{
+			//y -= vSpeed;
+			//y -= vSpeed;
+			//if (sign(vSpeed) == 1) y += vSpeed;
+			vSpeed = 0;
+			_collision = true;
+		}
+		
+		if (y + vSpeed > 0 && y + vSpeed < room_height)
+		{
+			y += vSpeed;
+		}
+		/*
 		if (place_meeting(x, y, objSolid))
 		{			
 			var new_x = x;
@@ -48,13 +76,27 @@ function CollisionScript()
 			{
 				new_y -= sign(vSpeed);
 			
-				if (!place_meeting(x, new_y, objSolid))
+				if (vSpeed > 0)
 				{
-					y = new_y;
-					vSpeed = 0;
-					break;
+					if (!place_meeting(x, new_y, objSolid))
+					{
+						y = new_y;
+						vSpeed = 0;
+						break;
+					}
+				}
+				else if (vSpeed < 0)
+				{
+					if (!place_meeting(x, new_y + 8, objSolid))
+					{
+						y = new_y;
+						vSpeed = 0;
+						break;
+					}
 				}
 			}
-		}
+		}*/
 	}
+	
+	return _collision;
 }

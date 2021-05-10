@@ -6,7 +6,7 @@ function PlayerStateFree()
 	hSpeed = lengthdir_x(inputMagnitude * speedWalk, inputDirection);
 	vSpeed = lengthdir_y(inputMagnitude * speedWalk, inputDirection);
 
-	MovementScript();
+	//MovementScript();
 	CollisionScript();
 	PlayerAnimateScript();
 	CameraMotionScript();
@@ -14,6 +14,12 @@ function PlayerStateFree()
 	recoil = clamp(recoil, 0, 1);
 	recoil += recoil + 1;
 	
+	if (flashlightBattery == 0 && flashlightCharging == false)
+	{
+		flashlightOn = false;
+		flashlightCharging = true;
+		alarm[0] = room_speed;
+	}
 	
 	if (keyInteract && (recoil > 1))
 	{
@@ -32,6 +38,22 @@ function PlayerStateFree()
 			show_debug_message("stealing key");
 			StealItem();
 			recoil = 0;
+		}
+		
+		if (keyboard_check(ord("F")))
+		{
+			flashlightOn = !flashlightOn;
+			
+			if (flashlightOn == true)
+			{
+				flashlightCharging = false;
+				alarm[0] = room_speed;
+			}
+			else
+			{
+				flashlightCharging = true;
+				alarm[0] = room_speed;
+			}
 		}
 	}
 	

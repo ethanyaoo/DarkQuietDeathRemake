@@ -2,8 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerAnimateScript()
 {	
-	image_xscale = 0.75;
-	image_yscale = 0.75;
+	image_xscale = 0.6;
+	image_yscale = 0.6;
 	
 	var prevSprite = sprite_index;
 	
@@ -22,27 +22,30 @@ function PlayerAnimateScript()
 		localFrame = 0;
 	}
 	
-	var _direction = CARD_DIRECTION;
-	
-	if (direction == 0)
+	if (CARD_DIRECTION == 4)
 	{
-		_direction = 4;
-	}
-	
-	var _frames = sprite_get_number(sprite_index) / 4;
-
-	image_index = localFrame + (_direction * _frames);
-
-	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
-
-	// If anim loops on next step
-	if (localFrame >= _frames)
-	{
-		//animationEnd = true;
-		localFrame -= _frames;
+		var _direction = 0;
 	}
 	else
 	{
-		//animationEnd = false;
+		var _direction = CARD_DIRECTION;
+	}
+	
+	var _frames = sprite_get_number(sprite_index) / 4;
+	
+	image_index = (localFrame + (_direction * _frames));
+
+	localFrame += sprite_get_speed(sprite_index) / FRAME_RATE;
+	
+	if (sprite_index == sprWalk && (localFrame == 0.1 || localFrame == 2.0 || localFrame == 4.0 ))
+	{
+		audio_play_sound(sndWalk, 2, false);
+	}
+	
+	// If anim loops on next step
+	
+	if (localFrame >= _frames)
+	{
+		localFrame = 0;
 	}
 }

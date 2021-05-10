@@ -1,5 +1,4 @@
 {
-  "name": "tsDefault",
   "spriteId": {
     "name": "sprFloor",
     "path": "sprites/sprFloor/sprFloor.yy",
@@ -39,6 +38,7 @@
     "path": "folders/Tile Sets.yy",
   },
   "resourceVersion": "1.0",
+  "name": "tsDefault",
   "tags": [],
   "resourceType": "GMTileSet",
 }
