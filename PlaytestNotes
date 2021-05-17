@@ -1,0 +1,39 @@
+PLAYTESTING NOTES (Names were redacted as some names were not written at time of playtest)
+
+-didn't know what he was doing or where he
+was going
+-barely had time to get a grasp at where he was before flashlight turned off
+-lengthen the battery decreases
+-decrease flashlight radius as battery goes down
+-radius goes down if battery is 0
+
+-sprites seemed like the right size
+-feels more like a turn-based game
+-grid makes it feel like you should be navigating something or fighting something like a tactics game
+-game ends when you do see the enemy
+
+-turn off anti alias because text becomes a bit blurry in comparison with sprites
+-if you want to replace black space just put something for aesthetics with a meaning
+-instead of pressing the flashlight to turn it on, hold it down to keep it on
+-confused if there is something that you should be doing
+
+-need eiry music
+-with every key instead of refilling the battery the battery permanently recharges faster?
+-confused about story? narrative?
+
+-battery is a bit too fast for being used up
+-am i supposed to find something or escape?
+-notification to indicate that you picked up a battery
+-battery runs out too fast before you get a sense of the area
+-make the flashlight last longer
+
+-not sure what to do
+-flashlight battery goes away too quickly
+-longer battery OR shrinking shroud radius 
+-sprites a bit bigger
+
+MY NOTES:
+-Flashlight icon UI with a letter F that highlights when you press F
+-Sound for collecting flashlight battery
+-Create black maze section so if you fall player dies and switches to death anim of falling (TEMP FIX for walls not working)
+-Multiple monsters wandering around
