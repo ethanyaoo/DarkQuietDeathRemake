@@ -32,10 +32,7 @@ function CollisionScript()
 			_collision = true;
 		}
 		
-		if (x + hSpeed > 0 && x + hSpeed < room_height) 
-		{
-			x += hSpeed;
-		}
+		x += hSpeed;
 		
 		if (place_meeting(x, y + vSpeed, objSolid)) 
 		{
@@ -46,10 +43,8 @@ function CollisionScript()
 			_collision = true;
 		}
 		
-		if (y + vSpeed > 0 && y + vSpeed < room_height)
-		{
-			y += vSpeed;
-		}
+		y += vSpeed;
+		
 		/*
 		if (place_meeting(x, y, objSolid))
 		{			

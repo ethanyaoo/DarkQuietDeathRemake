@@ -25,53 +25,53 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -100,13 +100,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst1.sprite_index = sprWallTop;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
 			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -117,13 +117,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -134,13 +134,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -151,13 +151,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -168,13 +168,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst21.sprite_index = sprWallTop;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
 			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -189,13 +189,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst1.sprite_index = sprWallTopLeft;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
 			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -203,53 +203,53 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -257,13 +257,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst21.sprite_index = sprWallTopRight;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
 			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -271,7 +271,7 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			break;
 			
-		case CORNER_BL:
+		case CORNER_TL:
 		
 			// X - 2
 		
@@ -292,16 +292,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -309,16 +309,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -326,16 +326,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -343,16 +343,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X + 2
 			
-			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst21.sprite_index = sprFloorBase;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
 			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -360,20 +360,20 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			break;
 			
-		case CORNER_BR:
+		case CORNER_TR:
 		
 			// X - 2
 		
-			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst1.sprite_index = sprFloorBase;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
 			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -381,16 +381,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -398,16 +398,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -415,16 +415,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -449,7 +449,7 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			break;
 			
-		case CORNER_TL:
+		case CORNER_BL:
 			
 			// X - 2
 		
@@ -473,16 +473,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
@@ -490,16 +490,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
@@ -507,16 +507,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -524,37 +524,37 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst21.sprite_index = sprWallTop;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
-			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst25.sprite_index = sprFloorBase;
 			
 			break;
 			
-		case CORNER_TR:
+		case CORNER_BR:
 		
 			// X - 2
 		
 			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst1.sprite_index = sprWallTop;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
-			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst5.sprite_index = sprFloorBase;
 			
 			// X - 1
@@ -562,16 +562,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
@@ -579,16 +579,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
@@ -596,16 +596,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -627,23 +627,23 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			break;
 			
-		case T_JUNCT_D:
+		case T_JUNCT_U:
 		
 			// X - 2
 		
 			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst1.sprite_index = sprWallTop;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
-			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst5.sprite_index = sprFloorBase;
 			
 			// X - 1
@@ -651,16 +651,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
@@ -668,16 +668,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
@@ -685,16 +685,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -702,34 +702,34 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst21.sprite_index = sprWallTop;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
-			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst25.sprite_index = sprFloorBase;
 			
 			break;
 			
-		case T_JUNCT_U:
+		case T_JUNCT_D:
 		
 			// X - 2
 		
-			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst1.sprite_index = sprFloorBase;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
 			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -737,16 +737,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -754,16 +754,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -771,16 +771,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -788,16 +788,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X + 2
 			
-			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst21.sprite_index = sprFloorBase;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
 			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -826,70 +826,70 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
 			
-			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst21.sprite_index = sprFloorBase;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
-			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst25.sprite_index = sprFloorBase;
 			
 			break;
@@ -898,70 +898,70 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 		
 			// X - 2
 		
-			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst1.sprite_index = sprFloorBase;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
-			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst5.sprite_index = sprFloorBase;
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -990,13 +990,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst1.sprite_index = sprWallTop;
 			
-			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst2 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst2.sprite_index = sprFloorBase;
 			
-			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst3 = instance_create_layer((_x - 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst3.sprite_index = sprFloorBase;
 			
-			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst4 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst4.sprite_index = sprFloorBase;
 			
 			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1007,13 +1007,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1024,13 +1024,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1041,13 +1041,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1096,13 +1096,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1113,13 +1113,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1130,13 +1130,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1147,13 +1147,13 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst21.sprite_index = sprWallTop;
 			
-			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst22 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst22.sprite_index = sprFloorBase;
 			
-			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst23 = instance_create_layer((_x + 2) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst23.sprite_index = sprFloorBase;
 			
-			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst24 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst24.sprite_index = sprFloorBase;
 			
 			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1185,16 +1185,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst6.sprite_index = sprWallTop;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
-			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst10.sprite_index = sprFloorBase;
 			
 			// CENTER X
@@ -1202,16 +1202,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst11.sprite_index = sprWallTop;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
-			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst15.sprite_index = sprFloorBase;
 			
 			// X + 1
@@ -1219,16 +1219,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
 			wallInst16.sprite_index = sprWallTop;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
-			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objFloor);
+			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Floor", objFloor);
 			wallInst20.sprite_index = sprFloorBase;
 			
 			// X + 2
@@ -1271,16 +1271,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X - 1
 			
-			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst6.sprite_index = sprFloorBase;
 			
-			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst7 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst7.sprite_index = sprFloorBase;
 			
-			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst8 = instance_create_layer((_x - 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst8.sprite_index = sprFloorBase;
 			
-			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst9 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst9.sprite_index = sprFloorBase;
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1288,16 +1288,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// CENTER X
 			
-			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst11.sprite_index = sprFloorBase;
 			
-			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst12 = instance_create_layer((_x) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst12.sprite_index = sprFloorBase;
 			
-			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst13 = instance_create_layer((_x) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst13.sprite_index = sprFloorBase;
 			
-			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst14 = instance_create_layer((_x) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst14.sprite_index = sprFloorBase;
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1305,16 +1305,16 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			
 			// X + 1
 			
-			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objFloor);
+			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Floor", objFloor);
 			wallInst16.sprite_index = sprFloorBase;
 			
-			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst17 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst17.sprite_index = sprFloorBase;
 			
-			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Walls", objFloor);
+			var wallInst18 = instance_create_layer((_x + 1) * 16 + xOffset, _y * 16 + yOffset, "Floor", objFloor);
 			wallInst18.sprite_index = sprFloorBase;
 			
-			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Walls", objFloor);
+			var wallInst19 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 1) * 16 + yOffset, "Floor", objFloor);
 			wallInst19.sprite_index = sprFloorBase;
 			
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
@@ -1433,27 +1433,27 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			// X - 2
 		
 			var wallInst1 = instance_create_layer((_x - 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
-			wallInst1.sprite_index = sprWallPieceTop;
+			wallInst1.sprite_index = sprWallTop;
 			
 			// X - 1
 			
 			var wallInst6 = instance_create_layer((_x - 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
-			wallInst6.sprite_index = sprWallPieceTop;
+			wallInst6.sprite_index = sprWallTop;
 			
 			// CENTER X
 			
 			var wallInst11 = instance_create_layer((_x) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
-			wallInst11.sprite_index = sprWallPieceTop;
+			wallInst11.sprite_index = sprWallTop;
 			
 			// X + 1
 			
 			var wallInst16 = instance_create_layer((_x + 1) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
-			wallInst16.sprite_index = sprWallPieceTop;
+			wallInst16.sprite_index = sprWallTop;
 			
 			// X + 2
 			
 			var wallInst21 = instance_create_layer((_x + 2) * 16 + xOffset, (_y - 2)  * 16 + yOffset, "Walls", objWall);
-			wallInst21.sprite_index = sprWallPieceTop;
+			wallInst21.sprite_index = sprWallTop;
 			
 			break;
 			
@@ -1462,27 +1462,27 @@ function CreateMazeSection(_x, _y, xOffset, yOffset, sectionType)
 			// X - 2
 			
 			var wallInst5 = instance_create_layer((_x - 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
-			wallInst5.sprite_index = sprWallPieceBottom;
+			wallInst5.sprite_index = sprWallBottom;
 			
 			// X - 1
 			
 			var wallInst10 = instance_create_layer((_x - 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
-			wallInst10.sprite_index = sprWallPieceBottom;
+			wallInst10.sprite_index = sprWallBottom;
 			
 			// CENTER X
 			
 			var wallInst15 = instance_create_layer((_x) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
-			wallInst15.sprite_index = sprWallPieceBottom;
+			wallInst15.sprite_index = sprWallBottom;
 			
 			// X + 1
 
 			var wallInst20 = instance_create_layer((_x + 1) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
-			wallInst20.sprite_index = sprWallPieceBottom;
+			wallInst20.sprite_index = sprWallBottom;
 			
 			// X + 2
 			
 			var wallInst25 = instance_create_layer((_x + 2) * 16 + xOffset, (_y + 2) * 16 + yOffset, "Walls", objWall);
-			wallInst25.sprite_index = sprWallPieceBottom;
+			wallInst25.sprite_index = sprWallBottom;
 			
 			break;
 			

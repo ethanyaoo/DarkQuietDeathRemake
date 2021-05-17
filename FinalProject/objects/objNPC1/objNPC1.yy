@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprNPC1",
-    "path": "sprites/sprNPC1/sprNPC1.yy",
+    "name": "sprKeeper",
+    "path": "sprites/sprKeeper/sprKeeper.yy",
   },
   "solid": false,
   "visible": true,

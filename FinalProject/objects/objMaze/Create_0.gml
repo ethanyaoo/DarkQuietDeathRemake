@@ -1,13 +1,10 @@
 randomize();
 
-// Load Tiles
-var wallMapID = layer_tilemap_get_id("Walls");
+_width = room_width div CELL_WIDTH;
+_height = room_height div CELL_HEIGHT;
 
-//_width = room_width div CELL_WIDTH;
-//_height = room_height div CELL_HEIGHT;
-
-_width = 10;
-_height = 10;
+//_width = 10;
+//_height = 10;
 
 _grid = ds_grid_create(_width, _height);
 
@@ -49,6 +46,11 @@ ds_list_add(_direction, goDown);
 ds_list_add(_direction, goLeft);
 ds_list_add(_direction, goRight);
 
+wallTop = false;
+wallBottom = false;
+wallLeft = false;
+wallRight = false;
+
 
 function InitializeMap()
 {
@@ -79,13 +81,14 @@ function PlaceRandomBattery()
 
 function PlaceFPC()
 {
-	for (_y = 0; _y < _height - 1; _y++)
+	for (var _y = 0; _y < _height - 1; _y++)
 	{
-		for (_x = 0; _x < _width - 1; _x++)
+		for (var _x = 0; _x < _width - 1; _x++)
 		{
 			if (_grid[# _x, _y] == 0)
 			{
 				instance_create_layer((CELL_WIDTH / 2) + (_x * SECTION_WIDTH), (CELL_HEIGHT / 2) + (_y * SECTION_HEIGHT), "Level", objPlayer);
+				instance_create_layer((CELL_WIDTH / 2) + (_x * SECTION_WIDTH), (CELL_HEIGHT / 2) + (_y * SECTION_HEIGHT), "Level", objNPC1);
 				return;
 			}
 		}
@@ -108,17 +111,17 @@ function PlaceEnemy()
 
 function AddRoom(count, minSize, maxSize)
 {
-	for (c = 0; c < count; c++)
+	for (var c = 0; c < count; c++)
 	{
-		startX = random_range(3, _width - 3);
-		startY = random_range(3, _height - 3);
+		var startX = random_range(3, _width - 3);
+		var startY = random_range(3, _height - 3);
 		
-		roomWidth = random_range(minSize, maxSize);
-		roomHeight = random_range(minSize, maxSize);
+		var roomWidth = random_range(minSize, maxSize);
+		var roomHeight = random_range(minSize, maxSize);
 		
-		for (i = startX; i < _width - 3 && i < startX + roomWidth; i++)
+		for (var i = startX; i < _width - 3 && i < startX + roomWidth; i++)
 		{
-			for (j = startY; j < _height - 3 && j < startY + roomHeight; j++)
+			for (var j = startY; j < _height - 3 && j < startY + roomHeight; j++)
 			{
 				_grid[# i, j] = 0;
 			}
@@ -154,8 +157,9 @@ function Generate()
 
 function GenerateNext(_x, _y)
 {
-	show_debug_message("GenerateNext " + string(global.recurCount));
+	//show_debug_message("GenerateNext " + string(global.recurCount));
 	global.recurCount += 1;
+	
 	if (countSquareNeighbors(_x, _y) >= 2)
 	{
 		return;
@@ -176,7 +180,7 @@ function DrawGrid()
 	var arrStraightV = [
 						5, 0, 5,
 						1, 0, 1,
-						5, 0, 0];
+						5, 0, 5];
 	
 	var arrStraightH = [
 						5, 1, 5,
@@ -190,22 +194,22 @@ function DrawGrid()
 						
 	var arrCornerBL = [
 						5, 0, 1,
-						1, 0, 0,
+						1, 5, 0,
 						5, 1, 5];
 						
 	var arrCornerBR = [
 						1, 0, 5,
-						0, 0, 1,
+						0, 5, 1,
 						5, 1, 5];
 						
 	var arrCornerTL = [
 						5, 1, 5,
-						1, 0, 0,
+						1, 5, 0,
 						5, 0, 1];
 						
 	var arrCornerTR = [
 						5, 1, 5,
-						0, 0, 1,
+						0, 5, 1,
 						1, 0, 5];
 						
 	var arrTJunctU = [
@@ -256,7 +260,7 @@ function DrawGrid()
 		var xOffset = 32;
 		
 		for (var _x = 0; _x < _width; _x++)
-		{
+		{	
 			if (_grid[# _x, _y] == 1)
 			{
 				//instance_create_layer(_x * TILE_SIZE, _y * TILE_SIZE, "Level", objWallTop);
@@ -329,30 +333,48 @@ function DrawGrid()
 				
 				locateWalls(_x, _y);
 				
-				if (wallTop)
-				{
-					CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_T);
+				if (wallTop && wallLeft) // Bug occasionally occurs with searchMaze not working correctly and if statements used as quick fix 
+				{							// RETURN TO FIX
+					CreateMazeSection(_x, _y, xOffset, yOffset, CORNER_TL);
 				}
+				else if (wallTop && wallRight)
+				{
+					CreateMazeSection(_x, _y, xOffset, yOffset, CORNER_TR);
+				}
+				else if (wallBottom && wallLeft)
+				{
+					CreateMazeSection(_x, _y, xOffset, yOffset, CORNER_BL);
+				}
+				else if (wallBottom && wallRight)
+				{
+					CreateMazeSection(_x, _y, xOffset, yOffset, CORNER_BR);
+				}
+				else
+				{
+					if (wallTop)
+					{
+						CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_T);
+					}
 				
-				if (wallBottom)
-				{
-					CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_B);
-				}
+					if (wallBottom)
+					{
+						CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_B);
+					}
 				
-				if (wallRight)
-				{
-					CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_R);
-				}
+					if (wallRight)
+					{
+						CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_R);
+					}
 				
-				if (wallLeft)
-				{
-					CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_L);
+					if (wallLeft)
+					{
+						CreateMazeSection(_x, _y, xOffset, yOffset, WALL_PIECE_L);
+					}
 				}
-				//CreateMazeSection(_x, _y, STRAIGHT_V);
-				//instance_create_layer(_x * TILE_SIZE, _y * TILE_SIZE, "Level", objFloor);
 			}
 			else
 			{
+				show_debug_message("X: " + string(_x) + " Y: " + string(_y) + " CountSquare: " + string(countSquareNeighbors(_x, _y)) + " CountDiag: " + string(countDiagonalNeighbors(_x, _y)));
 				CreateMazeSection(_x, _y, xOffset, yOffset, FLOOR_SECTION);
 			}
 			
@@ -372,6 +394,54 @@ function locateWalls(_x, _y)
 	
 	if (_x <= 0 || _x >= _width - 1 || _y <= 0 || _y >= _height - 1)
 	{
+		if (_x > 0)
+		{
+			if (_grid[# _x - 1, _y] == 1)
+			{
+				wallLeft = true;
+			}
+		}
+		else
+		{
+			wallLeft = true;
+		}
+		
+		if (_x < _width - 1)
+		{
+			if (_grid[# _x + 1, _y] == 1)
+			{
+				wallRight = true;
+			}
+		}
+		else
+		{
+			wallRight = true;
+		}
+		
+		if (_y > 0)
+		{
+			if (_grid[# _x, _y - 1] == 1)
+			{
+				wallBottom = true;
+			}
+		}
+		else
+		{
+			wallBottom = true;
+		}
+		
+		if (_y < _height - 1)
+		{
+			if (_grid[# _x, _y + 1] == 1)
+			{
+				wallTop = true;
+			}
+		}
+		else
+		{
+			wallTop = true;
+		}
+		
 		return;
 	}
 	
@@ -402,11 +472,21 @@ function searchMaze(col, row, pattern)
 	{
 		for (var _x = -1; _x < 2; _x++)
 		{
-			if (col + _x > 0 && row + _y > 0 && col + _x < _width && row + _y < _height)
+			if (col + _x >= 0 && row + _y >= 0 && col + _x <= _width - 1 && row + _y <= _height - 1)
 			{
 				if (pattern[pos] == _grid[# col + _x, row + _y] || pattern[pos] == 5)
 				{
 					count++;
+				}
+			}
+			else
+			{
+				if (col + _x == -1 || row + _y == -1 || col + _x >= _width - 1 || row + _y >= _height - 1)
+				{
+					if (pattern[pos] == 1 || pattern[pos] == 5)
+					{
+						count++;
+					}
 				}
 			}
 			
@@ -422,10 +502,10 @@ function countSquareNeighbors(_x, _y)
     var count = 0;
 
     if (_x <= 0 || _x >= _width - 1 || _y <= 0 || _y >= _height - 1) return 5;
-    if (_grid[# _x - 1, _y] == 0) count++;
-    if (_grid[# _x + 1, _y] == 0) count++;
-    if (_grid[# _x, _y - 1] == 0) count++;
-    if (_grid[# _x, _y + 1] == 0) count++;
+	if (_grid[# _x - 1, _y] == 0) count++;
+	if (_grid[# _x + 1, _y] == 0) count++;
+	if (_grid[# _x, _y - 1] == 0) count++;
+	if (_grid[# _x, _y + 1] == 0) count++;
 
     return count;
 }	
@@ -435,11 +515,11 @@ function countDiagonalNeighbors(_x, _y)
     var count = 0;
 
     if (_x <= 0 || _x >= _width - 1 || _y <= 0 || _y >= _height - 1) return 5;
-    if (_grid[# _x - 1, _y - 1] == 0) count++;
-    if (_grid[# _x - 1, _y + 1] == 0) count++;
-    if (_grid[# _x + 1, _y - 1] == 0) count++;
-    if (_grid[# _x + 1, _y + 1] == 0) count++;
-
+	if (_grid[# _x - 1, _y - 1] == 0) count++;
+	if (_grid[# _x - 1, _y + 1] == 0) count++;
+	if (_grid[# _x + 1, _y - 1] == 0) count++;
+	if (_grid[# _x + 1, _y + 1] == 0) count++;
+	
     return count;
 }
 
@@ -456,7 +536,7 @@ PlaceFPC();
 
 for (var i = 0; i < 10; i++)
 {
-	PlaceRandomBattery();
+	//PlaceRandomBattery();
 }
 
 PlaceEnemy();
