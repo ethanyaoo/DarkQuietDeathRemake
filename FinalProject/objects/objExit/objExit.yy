@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "sprPortal",
-    "path": "sprites/sprPortal/sprPortal.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

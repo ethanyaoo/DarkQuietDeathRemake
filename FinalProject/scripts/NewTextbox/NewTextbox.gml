@@ -13,10 +13,12 @@ function NewTextbox(newText, newResponses)
 		_obj = objTextbox;
 	}
 	
-	with (instance_create_layer(0, 0, "Instances", _obj))
+	with (instance_create_layer(0, 0, "Textbox", _obj))
 	{
 		textMessage = newText;
 		responses = newResponses;
+		
+		show_debug_message(textMessage);
 		
 		if (instance_exists(other))
 		{

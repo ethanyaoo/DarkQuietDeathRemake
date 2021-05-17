@@ -3,8 +3,12 @@ if (keyboard_check(ord("p")))
 	global.gamePaused = true;
 }
 
-if (keyboard_check(ord("R")))
+if (!global.gamePaused)
 {
-	audio_stop_all();
-	room_restart();
+	if (global.gameOver == true)
+	{
+		global.gameOver = false;
+		audio_stop_all();
+		room_restart();
+	}
 }

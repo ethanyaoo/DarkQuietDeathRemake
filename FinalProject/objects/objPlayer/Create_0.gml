@@ -18,7 +18,7 @@ recoil = 0;
 
 flashlightOn = false;
 flashlightCharging = false;
-flashlightBattery = 10;
+flashlightBattery = 100;
 
 playerBreathing = audio_play_sound(sndHeavyBreathing, 9, true);
 

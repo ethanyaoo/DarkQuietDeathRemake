@@ -3,8 +3,8 @@
 #macro CARD_DIRECTION round(direction/90)
 #macro ROOM_START Room1
 
-#macro RESOLUTION_W 1280
-#macro RESOLUTION_H 720
+#macro RESOLUTION_W 2048
+#macro RESOLUTION_H 1080
 
 #macro CELL_WIDTH 80
 #macro CELL_HEIGHT 80
@@ -41,8 +41,13 @@
 #macro WALL_PIECE_L 18
 #macro WALL_PIECE_R 19
 
-
-
+enum ENEMY_STATE
+{
+	IDLE,
+	WANDER,
+	CHASE,
+	ATTACK
+}
 
 
 

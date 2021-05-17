@@ -29,7 +29,7 @@ if (FOG_ON)
 				s = 1;
 			}
 			
-			if (s > 0)
+			if (s == 1)
 			{
 				draw_set_alpha(s);
 
@@ -37,6 +37,15 @@ if (FOG_ON)
 				var ry = (c * gridSize) + _offY;
 				
 				draw_rectangle(rx, ry, rx + (gridSize), ry + (gridSize), false);
+			}
+			else if (s == 2)
+			{
+				draw_set_alpha(0.9);
+				
+				var rx = (r * gridSize) + _offX;
+				var ry = (c * gridSize) + _offY;
+				// Offset draw rectangle by 0.5 to remove outline
+				draw_rectangle(rx, ry, rx + (gridSize - 0.5), ry + (gridSize - 0.5), false);
 			}
 		}
 	}
@@ -49,8 +58,16 @@ draw_set_color(c_white);
 draw_set_halign(fa_center);
 draw_set_valign(fa_top);
 
-draw_text(camera_get_view_width(view_camera[0]) / 2, 0, string(minutes) + ":" + string(seconds));
+if (global.seconds > 9)
+{
+	draw_text(camera_get_view_width(view_camera[0]) / 2, 20, string(global.minutes) + ":" + string(global.seconds));
+}
+else if (global.seconds <= 9)
+{
+	draw_text(camera_get_view_width(view_camera[0]) / 2, 20, string(global.minutes) + ":0" + string(global.seconds));
+}
+
 if (instance_exists(objPlayer))
 {
-	draw_text(camera_get_view_width(view_camera[0]) / 2, 20, "Flashlight Battery: " + string(objPlayer.flashlightBattery));
+	draw_text(camera_get_view_width(view_camera[0]) / 2, 40, "Flashlight Battery: " + string(objPlayer.flashlightBattery) + "%");
 }

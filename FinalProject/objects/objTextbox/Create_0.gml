@@ -1,10 +1,11 @@
-x1 = RESOLUTION_W / 2;
-y1 = RESOLUTION_H - 240;
-x2 = RESOLUTION_W / 2;
-y2 = RESOLUTION_H;
+x1 = camera_get_view_width(view_camera[0]) / 2;
+y1 = camera_get_view_height(view_camera[0]) - 120;
+x2 = camera_get_view_width(view_camera[0]) / 2;
+y2 = camera_get_view_height(view_camera[0]);
 
-x1Target = 0;
-x2Target = RESOLUTION_W;
+
+x1Target = camera_get_view_width(view_camera[0]) / 8;
+x2Target = 7 * camera_get_view_width(view_camera[0]) / 8;
 
 lerpProgress = 0;
 

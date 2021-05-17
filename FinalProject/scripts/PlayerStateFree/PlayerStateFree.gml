@@ -23,6 +23,7 @@ function PlayerStateFree()
 	
 	if (keyInteract && (recoil > 1))
 	{
+		/*
 		if (keyboard_check(vk_space) && (distance_to_object(objNPC1) < 5))
 		{
 			NewTextbox(". . . ", ["1:Hello", "0:(Leave)"]);
@@ -37,6 +38,15 @@ function PlayerStateFree()
 		{
 			show_debug_message("stealing key");
 			StealItem();
+			recoil = 0;
+		}
+		*/
+		
+		var nearTextSign = instance_nearest(x, y, objTextboxSign);
+		
+		if (keyboard_check(vk_space) && distance_to_object(nearTextSign) < 10)
+		{
+			NewTextbox(nearTextSign.textMessage, nearTextSign.response);
 			recoil = 0;
 		}
 		

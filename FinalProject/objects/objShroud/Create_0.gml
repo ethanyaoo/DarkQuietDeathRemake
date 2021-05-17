@@ -1,6 +1,6 @@
 gridSize = 16;
 
-shroudGrid = ds_grid_create((2 * room_width) div gridSize, (2 * room_height) div gridSize);
+shroudGrid = ds_grid_create((4 * room_width) div gridSize, (4 * room_height) div gridSize);
 
 ds_grid_clear(shroudGrid, 1);
 
@@ -14,9 +14,6 @@ if ((camera_get_view_height(view_camera[0])) mod gridSize != 0) _soh++;
 
 camCellWidth = ((camera_get_view_width(view_camera[0])) div gridSize) + _sow;
 camCellHeight = ((camera_get_view_height(view_camera[0])) div gridSize) + _soh;
-
-seconds = 0;
-minutes = 0;
 
 alarm[0] = room_speed;
 

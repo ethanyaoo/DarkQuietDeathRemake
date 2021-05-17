@@ -1,7 +1,10 @@
-if (seconds >= 60)
+if (global.gameOver == false)
 {
-	seconds = 0;
-	minutes += 1;
+	if (global.seconds >= 60)
+	{
+		global.seconds = 0;
+		global.minutes += 1;
+	}
 }
 
 ds_grid_clear(shroudGrid, 1);

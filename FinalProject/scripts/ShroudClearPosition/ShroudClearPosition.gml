@@ -5,7 +5,7 @@ function ShroudClearPosition(_x, _y)
 	var _sx = _x div objShroud.gridSize;
 	var _sy = _y div objShroud.gridSize;
 	
-	var shroudClearSize = objShroud.clearGridSize + objPlayer.flashlightBattery;
+	var shroudClearSize = objShroud.clearGridSize + ceil(objPlayer.flashlightBattery / 10);
 	
 	if ((shroudClearSize mod 2) == 0) shroudClearSize += 1;
 	

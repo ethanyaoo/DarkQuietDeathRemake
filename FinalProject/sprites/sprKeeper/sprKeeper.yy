@@ -1,5 +1,5 @@
 {
-  "bboxMode": 0,
+  "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
   "origin": 9,
@@ -9,7 +9,7 @@
   "swfPrecision": 2.525,
   "bbox_left": 17,
   "bbox_right": 44,
-  "bbox_top": 5,
+  "bbox_top": 35,
   "bbox_bottom": 61,
   "HTile": false,
   "VTile": false,
@@ -17,8 +17,8 @@
   "width": 64,
   "height": 64,
   "textureGroupId": {
-    "name": "",
-    "path": "",
+    "name": "Default",
+    "path": "texturegroups/Default",
   },
   "swatchColours": null,
   "gridX": 0,

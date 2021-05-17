@@ -4,15 +4,18 @@ function CollisionScript()
 {
 	var _collision = false;
 	
-	if (place_meeting(x, y, objExit))
+	if (place_meeting(x, y, objEnemy))
 	{
-		room_restart();
+		audio_stop_sound(sndMonsterShort);
+		global.gameOver = true;
+		room_goto(Room3);
 	}
 	else if (place_meeting(x, y, objBattery))
 	{
-		flashlightBattery += 2;
+		audio_play_sound(sndCollectKey, 10, false);
+		flashlightBattery += 10;
 		
-		if (flashlightBattery > 10) flashlightBattery = 10;
+		if (flashlightBattery > 100) flashlightBattery = 100;
 		
 		var batteryInst = instance_place(x, y, objBattery);
 		
@@ -44,53 +47,6 @@ function CollisionScript()
 		}
 		
 		y += vSpeed;
-		
-		/*
-		if (place_meeting(x, y, objSolid))
-		{			
-			var new_x = x;
-		
-			for (var dist_moved = 0; dist_moved < abs(hSpeed); dist_moved++)
-			{
-				new_x -= sign(hSpeed);
-			
-				if (!place_meeting(new_x, y, objSolid))
-				{
-					x = new_x;
-					hSpeed = 0;
-					break;
-				}
-			}
-		}
-	
-		if (place_meeting(x, y, objSolid))
-		{
-			var new_y = y;
-		
-			for (var dist_moved = 0; dist_moved < abs(vSpeed); dist_moved++)
-			{
-				new_y -= sign(vSpeed);
-			
-				if (vSpeed > 0)
-				{
-					if (!place_meeting(x, new_y, objSolid))
-					{
-						y = new_y;
-						vSpeed = 0;
-						break;
-					}
-				}
-				else if (vSpeed < 0)
-				{
-					if (!place_meeting(x, new_y + 8, objSolid))
-					{
-						y = new_y;
-						vSpeed = 0;
-						break;
-					}
-				}
-			}
-		}*/
 	}
 	
 	return _collision;

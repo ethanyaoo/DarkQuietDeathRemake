@@ -22,17 +22,29 @@ if (!global.gamePaused)
 	{
 		PlayerStateFree();
 	}
+	else if (state == "PlayerStateLock")
+	{
+		PlayerStateLock();
+	}
 }
 
 if (instance_exists(objShroud))
 {
-	var shroudClearGridSize = objShroud.clearGridSize + flashlightBattery;
+	var shroudClearGridSize = objShroud.clearGridSize + ceil(flashlightBattery / 10);
 	
 	if ((shroudClearGridSize mod 2) == 0) shroudClearGridSize += 1;
 	
 	var shroudClearRadius = shroudClearGridSize / 2;
 	
 	shroudClearGrid = ShroudClearGridSetup(shroudClearRadius, shroudClearGridSize);
+	
+	var shroudClearGridSizeOff = objShroud.clearGridSize + 1;
+	
+	if ((shroudClearGridSizeOff mod 2) == 0) shroudClearGridSizeOff += 1;
+	
+	var shroudClearRadiusOff = shroudClearGridSizeOff / 2;
+	
+	shroudClearGridOff = ShroudClearGridSetup(shroudClearRadiusOff, shroudClearGridSizeOff);
 }
 
 depth = -bbox_bottom;
